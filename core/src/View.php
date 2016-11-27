@@ -15,7 +15,7 @@ class View{
     public function __construct($container)
     {
         $this->container = $container;
-        $this->tpl = $this->container['tpl'] = new \Smarty();
+        $this->tpl = $this->container['tpl'] = new \Box\Brainy\Brainy();
         $this->tpl->addPluginsDir(CORE_DIR . '/ext/smarty');
         $this->tpl->caching = 0;
 
